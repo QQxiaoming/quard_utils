@@ -14,7 +14,7 @@
 #define reteck(ret)                                                   \
     if (ret < 0) {                                                    \
         printf("%d %m! \"%s\" : line: %d\n",ret, __func__, __LINE__); \
-        goto lab;                                                     \
+        goto fail;                                                     \
     }
 
 #define help()                                        \
@@ -70,7 +70,8 @@ int main(int argc, char *argv[])
     }
 
     ret = 0;
-lab:
+
+fail:
     close(sockfd);
     return ret;
 }
