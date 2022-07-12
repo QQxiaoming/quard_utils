@@ -1,4 +1,4 @@
-#!/bin/bash
+#! /bin/bash
 
 # ldd drop-in replacement for cross-compilation toolchains.
 

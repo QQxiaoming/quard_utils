@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: BSD 3-Clause
+
 BUILD_DIR = output
 
 all:macgen mdio translate
